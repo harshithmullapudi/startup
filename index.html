@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Golazy | let's Begin</title>
+    <link rel="shortcut icon"  href="./images/logo.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Pacifico" rel="stylesheet">
+    <script
+          src="./assets/jquery.js"></script>
+
+
+ <link rel="stylesheet" type="text/css" href="./assets/semantic.css">
+
+<script src="./assets/semantic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+
+
+    <script src="assets/typed.js"></script>
+
+      <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+    <script>
+      if(typeof firebase == 'undefined')
+      {
+          firebase = 0
+      }
+      else {
+        var config = {
+          apiKey: "AIzaSyDrjC4t3CICFzfV5AuUWdz4a5x4wxHnw2A",
+          authDomain: "daksh-11d9f.firebaseapp.com",
+          databaseURL: "https://daksh-11d9f.firebaseio.com",
+          storageBucket: "daksh-11d9f.appspot.com",
+          messagingSenderId: "557772007779"
+        };
+        firebase.initializeApp(config);
+      }
+    </script>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP5vkqZuiveZAYf8S-3dXCTPeCL7nl1Mw">
+    </script>
+    <style>
+
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+
+
+      ::-webkit-scrollbar-track {
+
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        background: #f26964;
+
+      }
+      ::-webkit-scrollbar-thumb:window-inactive {
+        background: #f26964;
+      }
+    </style>
+    <script src="./assets/anime.min.js"></script>
+
+  </head>
+
+  <body style="background-color: #ECF0F1;height: 100%">
+  <base href="/">
+  <my-app>
+  <div class="ui page">
+    <div class="content">
+      <div class="center">
+
+        <div class="ui active dimmer" style="background-color: white">
+          <div class="ui text large loader baby" >
+
+
+            <h1 class="ui header center middle aligned" id ="alternate" style="color:#f26964;font-family: 'Gloria Hallelujah', cursive; font-size: 4.3em;height: 100%">
+     Golazy
+            </h1>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </my-app>
+  <script>
+
+    $(document).ready(function () {
+
+      var i =2;
+setInterval(function () {
+
+if(i%2 == 0) {
+  var alternate = anime({
+
+    targets: ['#alternate'],
+    color: [
+      {value: '#fed463'}, // Or #FFFFFF
+      {value: '#6798d1'},
+      {value: '#58585a'},
+      {value: '#f26964'}
+    ],
+    translateX: -500,
+    direction: 'alternate',
+    duration:3000,
+
+
+  });
+}
+else {
+  var alternate = anime({
+
+    targets: ['#alternate'],
+    color: [
+      {value: '#fed463'}, // Or #FFFFFF
+      {value: '#6798d1'},
+      {value: '#58585a'},
+      {value: '#f26964'}
+    ],
+    translateX: 500,
+    direction: 'alternate',
+    duration:3000,
+
+
+  });
+}
+i = i+1
+},4000)
+
+    })
+
+
+  </script>
+  <script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+</html>
